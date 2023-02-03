@@ -1,0 +1,31 @@
+
+entity Machine {
+}
+
+entity Users {
+	email String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity MSPD {
+	streetAddress String
+	postalCode String
+	city String
+	stateProvince String
+}
+
+relationship OneToMany {
+	Machine to MSPD
+}
+
+relationship ManyToMany {
+	Users to Machine
+}
+
+
+// Set pagination options
+paginate MSPD with infinite-scroll
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
