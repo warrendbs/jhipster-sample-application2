@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20230203103842",
+  "clientRootFolder": "jhipsterSampleApplication2",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "machine",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "jhipsterSampleApplication2",
+  "name": "Machine",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "mSPD",
+      "otherEntityRelationshipName": "machine",
+      "relationshipName": "mSPD",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "users",
+      "otherEntityRelationshipName": "machine",
+      "ownerSide": false,
+      "relationshipName": "users",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}
