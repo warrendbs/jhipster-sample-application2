@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230203103843",
+  "clientRootFolder": "jhipsterSampleApplication2",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "users",
+  "fields": [
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "jhipsterSampleApplication2",
+  "name": "Users",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "machine",
+      "otherEntityRelationshipName": "users",
+      "ownerSide": true,
+      "relationshipName": "machine",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20230203103844",
+  "clientRootFolder": "jhipsterSampleApplication2",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "mspd",
+  "fields": [
+    {
+      "fieldName": "streetAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateProvince",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "not an ignored comment",
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "jhipsterSampleApplication2",
+  "name": "MSPD",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "machine",
+      "otherEntityRelationshipName": "mSPD",
+      "relationshipName": "machine",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
